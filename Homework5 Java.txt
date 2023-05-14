@@ -1,0 +1,118 @@
+1.
+ public static void main(String[] args) {
+        checkNumber(8);
+        checkNumber(-8);
+        checkNumber(0);
+    }
+
+    public static void checkNumber(int number){
+        if (number > 0){
+            System.out.println("число " + number + " является положительным.");
+        } else if ( number < 0){
+            System.out.println("число " + number + "является отрицательным.");
+        }else {
+            System.out.println("число " + number + " является нулём.");
+        }
+    }
+}
+
+
+
+"C:\Program Files\Java\jdk-17\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1\lib\idea_rt.jar=61717:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\milao\IdeaProjects\Java\Homework5\out\production\Homework5 Homework51
+число 8 является положительным.
+число -8является отрицательным.
+число 0 является нулём.
+
+Process finished with exit code 0
+
+
+2.
+ public static void main(String[] args) {
+        int number = 3;
+        checkEvenOdd(number);
+    }
+    public static void checkEvenOdd(int number) {
+        if (number % 2 == 0) {
+            System.out.println(number + " является нечётным числом.");
+        }else {
+            System.out.println(number + " является нечётным числом.");
+        }
+    }
+
+}
+
+"C:\Program Files\Java\jdk-17\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1\lib\idea_rt.jar=61734:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\milao\IdeaProjects\Java\Homework5\out\production\Homework5 Homework52
+3 является нечётным числом.
+
+Process finished with exit code 0
+
+
+
+3.
+    public static void main(String[] args) {
+        int year = 2023;
+        boolean isLeapYear = checkLeapYear(year);
+        if (isLeapYear) {
+            System.out.println(year + " является високосным годом.");
+        } else {
+            System.out.println(year + " не является високосным годом.");
+        }
+    }
+    public static boolean checkLeapYear(int year) {
+        if (year % 4 == 0) {
+            if (year % 100 == 0) {
+                if (year % 400 == 0) {
+                    return true;
+                } else {
+                    return false;
+                }
+            } else {
+                return true;
+            }
+        } else {
+            return false;
+        }
+    }
+}
+
+
+"C:\Program Files\Java\jdk-17\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1\lib\idea_rt.jar=61705:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\milao\IdeaProjects\Java\Homework5\out\production\Homework5 Homework53
+2023 не является високосным годом.
+
+Process finished with exit code 0
+
+
+5.
+public static void main(String[] args) {
+        String month = "март";
+        String season = determineSeason(month);
+        System.out.println("Время года для месяца " + month + ": " + season);
+    }
+
+    public static String determineSeason(String month) {
+        if (month.equals("декабрь") || month.equals("январь") || month.equals("февраль")) {
+            return "зима";
+        } else if (month.equals("март") || month.equals("апрель") || month.equals("май")) {
+            return "весна";
+        } else if (month.equals("июнь") || month.equals("июль") || month.equals("август")) {
+            return "лето";
+        } else if (month.equals("сентябрь") || month.equals("октябрь") || month.equals("ноябрь")) {
+            return "осень";
+        } else {
+            return "неверный месяц";
+        }
+    }
+}
+
+
+"C:\Program Files\Java\jdk-17\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1\lib\idea_rt.jar=61743:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\milao\IdeaProjects\Java\Homework5\out\production\Homework5 Homework55
+Время года для месяца март: весна
+
+Process finished with exit code 0
+
+
+
+
+
+ 
+
